@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #232a30;
+}
+
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* content sections */
+
+.header {
+    width: 100%;
+}
+
+.header >
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-details {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-left: 16px;
+    font-size: 1.2em;
+}
+
+.description {
+    font-size: 0.9em;
+    background-color: #343a40;
+    padding: 5px 10px;
+}
+
+.header-container {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #65f;
+}
+
+.header-container >
+h1 {
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    margin-bottom: 10px;
+    background-color: #343a40;
+}
+
+.portfolio-item-text {
+    padding: 15px 15px 30px 15px;
+}
+
+.portfolio-item-text >
+h3 {
+    margin: 0;
+}
+
+.portfolio-item-text >
+p {
+    margin: 0 0 20px 0;
+}
+
+.portfolio-item-text >
+a {
+    padding: 5px 12px 7px 12px;
+    background-color: #444b50;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+/* responsive queries */
+
+@media only screen and (min-width: 600px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .portfolio-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio-item {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio-item {
+        width: 32%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0 auto;
+    }
+}
